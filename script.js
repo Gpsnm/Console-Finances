@@ -86,3 +86,25 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+let months = finances.length;
+let total = 0;
+let average = 0;
+
+for (let i = 0; i < months;i++){
+    total += finances[i][1];
+}
+
+console.log(total);
+
+
+let analysis = (
+`Financial Analysis
+-------------------
+Total Months: ${months}
+Total: $${total}`
+
+)
+
+console.log(analysis);
