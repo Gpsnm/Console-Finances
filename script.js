@@ -89,21 +89,25 @@ var finances = [
 
 
 let months = finances.length;
-let total = 0;
-let average = 0;
+let total =0;
+let average=0;
+let totalChange=0;
 
 for (let i = 0; i < months;i++){
     total += finances[i][1];
-}
-
-console.log(total);
-
+};
+for (let j = 0; j < months;j++){
+   Math.abs (average -= finances[j][1]);
+};
+console.log(average);
+totalChange= Math.round(average/months);
 
 let analysis = (
 `Financial Analysis
 -------------------
 Total Months: ${months}
-Total: $${total}`
+Total: $${total}
+Average Change:${totalChange} `
 
 )
 
