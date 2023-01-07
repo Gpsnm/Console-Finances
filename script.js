@@ -91,25 +91,27 @@ var finances = [
 // used to calculate total amount of months in the array.
 let months = finances.length;  
 let total =0;
-let average=0;
 let totalChange=0;
+let average=0;
 //for loop used to add all of the array items at index [1] together.
 for (let i = 0; i < months;i++){
     total += finances[i][1];
 };
-for (let j = 0; j < months;j++){
-   Math.abs (average -= finances[j][1]);
+//  for loop to find the difference between each month.
+for (let j = 0; j < months; j++){
+totalChange = finances[j][1] - finances[0][1]; 
 };
-console.log(average);
-totalChange= Math.round(average/months);
+// formula to find the average between the total change in months.
+average = (totalChange/(months-1));
+// used to round the average total to 2 decimal places.
+average = average.toFixed(2);
 // console log the calculations.
 let analysis = (
 `Financial Analysis
 -------------------
 Total Months: ${months}
 Total: $${total}
-Average Change:${totalChange} `
-
+Average Change:$${average}`
 )
 
 console.log(analysis);
