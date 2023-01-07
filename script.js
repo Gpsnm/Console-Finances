@@ -87,12 +87,13 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-
-let months = finances.length;
+// variables
+// used to calculate total amount of months in the array.
+let months = finances.length;  
 let total =0;
 let average=0;
 let totalChange=0;
-
+//for loop used to add all of the array items at index [1] together.
 for (let i = 0; i < months;i++){
     total += finances[i][1];
 };
@@ -101,7 +102,7 @@ for (let j = 0; j < months;j++){
 };
 console.log(average);
 totalChange= Math.round(average/months);
-
+// console log the calculations.
 let analysis = (
 `Financial Analysis
 -------------------
