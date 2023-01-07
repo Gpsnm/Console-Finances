@@ -91,7 +91,7 @@ var finances = [
 // used to calculate total amount of months in the array.
 let months = finances.length;  
 let total =0;
-let totalChange=0;
+let totalChange=[];
 let average=0;
 //for loop used to add all of the array items at index [1] together.
 for (let i = 0; i < months;i++){
