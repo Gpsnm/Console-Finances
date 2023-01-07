@@ -93,6 +93,8 @@ let months = finances.length;
 let total =0;
 let totalChange=[];
 let average=0;
+let increase=0;
+let decrease=0;
 //for loop used to add all of the array items at index [1] together.
 for (let i = 0; i < months;i++){
     total += finances[i][1];
@@ -111,7 +113,8 @@ let analysis = (
 -------------------
 Total Months: ${months}
 Total: $${total}
-Average Change:$${average}`
+Average Change:$${average}
+Greatest Increase in Profits: `
 )
 
 console.log(analysis);
