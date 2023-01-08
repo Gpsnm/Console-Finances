@@ -97,6 +97,7 @@ let largestIncrease = 0;
 let largestIncreaseMonth;
 
 
+
 //for loop used to add all of the array items at index [1] together.
 for (let i = 0; i < months; i++) {
   total += finances[i][1];
@@ -111,11 +112,14 @@ average = totalChange / (months - 1);
 average = average.toFixed(2);
 
 // loop to search for biggest increase in profit.
-for (let k = 0; k < months; k++){
-    let currentDifference = finances[k][1] - finances[k-1][1];
+for (let k = 1; k < months; k++){
+    let currentDifference = finances[k][1] - finances[k - 1][1];
+    if (currentDifference > largestIncrease){
+        largestIncrease = currentDifference;
+    }
 
 }
-
+ console.log(largestIncrease);
 // console log the calculations.
 let analysis = `Financial Analysis
 -------------------
