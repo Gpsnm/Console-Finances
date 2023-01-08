@@ -95,6 +95,8 @@ let totalChange = 0;
 let average = 0;
 let largestIncrease = 0;
 let largestDecrease = 0;
+let largestDecreaseMonth;
+let largestIncreaseMonth;
 
 
 
@@ -126,8 +128,16 @@ for (let l = 1; l< months; l++){
     let currentMonth = finances[l][1];
     let previousMonth = finances[l - 1][1];
     let isADecrease = currentMonth < previousMonth;
+    // if statement to start if isADecrease True.
+    if(isADecrease){
+        let currentDifference = currentMonth - previousMonth;
+        if (currentDifference < largestDecrease){
+            largestDecrease = currentDifference;
+         largestDecreaseMonth = finances[l][0];
+        }
+    }
+};
 
-}
 // console log the calculations.
 let analysis = `Financial Analysis
 -------------------
