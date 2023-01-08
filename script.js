@@ -94,6 +94,7 @@ let total = 0;
 let totalChange = 0;
 let average = 0;
 let largestIncrease = 0;
+let largestDecrease = 0;
 
 
 
@@ -119,6 +120,11 @@ for (let k = 1; k < months; k++){
         largestIncreaseMonth = finances[k][0];
     }
 };
+
+// loop to calculate if there is a decrease between months.
+for (let l = 1; l< months; l++){
+
+}
 // console log the calculations.
 let analysis = `Financial Analysis
 -------------------
