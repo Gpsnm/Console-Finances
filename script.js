@@ -144,6 +144,7 @@ let analysis = `Financial Analysis
 Total Months: ${months}
 Total: $${total}
 Average Change:$${average}
-Greatest Increase in Profits: ${largestIncreaseMonth}: ${largestIncrease}`;
+Greatest Increase in Profits: ${largestIncreaseMonth}: (${largestIncrease})
+Greatest Decrease in Profits: ${largestDecreaseMonth}: (${largestDecrease})`;
 
 console.log(analysis);
