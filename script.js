@@ -123,6 +123,8 @@ for (let k = 1; k < months; k++){
 
 // loop to calculate if there is a decrease between months.
 for (let l = 1; l< months; l++){
+    let currentMonth = finances[l][1];
+    let previousMonth = finances[l - 1][1];
 
 }
 // console log the calculations.
