@@ -94,7 +94,7 @@ let total = 0;
 let totalChange = 0;
 let average = 0;
 let largestIncrease = 0;
-let largestIncreaseMonth;
+
 
 
 
@@ -116,16 +116,15 @@ for (let k = 1; k < months; k++){
     let currentDifference = finances[k][1] - finances[k - 1][1];
     if (currentDifference > largestIncrease){
         largestIncrease = currentDifference;
+        largestIncreaseMonth = finances[k][0];
     }
-
-}
- console.log(largestIncrease);
+};
 // console log the calculations.
 let analysis = `Financial Analysis
 -------------------
 Total Months: ${months}
 Total: $${total}
 Average Change:$${average}
-Greatest Increase in Profits`;
+Greatest Increase in Profits: ${largestIncreaseMonth}: ${largestIncrease}`;
 
 console.log(analysis);
