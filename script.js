@@ -105,17 +105,15 @@ for (let i = 0; i < months; i++) {
 for (let j = 0; j < months; j++) {
   totalChange = finances[j][1] - finances[0][1];
 }
-
-
 // formula to find the average between the total change in months.
 average = totalChange / (months - 1);
 // used to round the average total to 2 decimal places.
 average = average.toFixed(2);
 
 // loop to search for biggest increase in profit.
-// for (let l=0; l<months; l++){
-
-// }
+for (let k = 0; k < months; k++){
+    
+}
 
 // console log the calculations.
 let analysis = `Financial Analysis
