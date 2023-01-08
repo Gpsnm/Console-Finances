@@ -112,7 +112,8 @@ average = average.toFixed(2);
 
 // loop to search for biggest increase in profit.
 for (let k = 0; k < months; k++){
-    
+    let currentDifference = finances[k][1] - finances[k-1][1];
+
 }
 
 // console log the calculations.
