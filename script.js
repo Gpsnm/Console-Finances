@@ -125,6 +125,7 @@ for (let k = 1; k < months; k++){
 for (let l = 1; l< months; l++){
     let currentMonth = finances[l][1];
     let previousMonth = finances[l - 1][1];
+    let isADecrease = currentMonth < previousMonth;
 
 }
 // console log the calculations.
