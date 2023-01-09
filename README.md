@@ -6,7 +6,7 @@ This week we have learned about arrays and iteration using for loops, also we le
 Project is created with Javascript.
 
 ## Image of web page
-
+<img src="./Assets/images/Screenshot 2023-01-09 175638.png" alt="">
 
 
 
